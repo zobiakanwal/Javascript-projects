@@ -8,5 +8,6 @@ body.style.backgroundColor = "pink";
 button.addEventListener('click', changeBG);
 
 function changeBG(){
-    body.style.backgroundColor = color[2];
+    const colorIndex = parseInt(Math.random()*color.length);
+    body.style.backgroundColor = color[colorIndex];
 }
